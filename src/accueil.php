@@ -8,6 +8,6 @@
     <script src="../assets/bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <h1>bonjour</h1>
+    <h1>Liste des objets</h1>
 </body>
 </html>
