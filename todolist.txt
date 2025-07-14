@@ -1,15 +1,25 @@
-EXAMEN S2:
+EXAMEN S2: //KyenYJ6D
 --------------------------------
-1. Creation repertoire github [ok]
-2. Insertion de tous les trucs:
- |-> * Assets (tous les truc de design)
+1. Creation repertoire github [ok] [4392]
+
+2. Insertion et creation des dossier et fichier les trucs: 
+ |-> * Assets (tous les truc de design) [4206]
       |-> css
           bootstrap
           etc...
      * include
-      |-> connexion.php
+      |-> connexion.php [4392]
       |-> function.php
      * src
-      |-> tous les pages 
+      |-> tous les pages [4206]
      * traitements
       |-> tous les traitements liee aux pages
+     * index.php 
+
+Version 1
+-------------------------
+ Creation base de donnees + Table
+ -membre
+ -categorie_objet
+ -categorie_objetimages_objet
+ -emprunt
