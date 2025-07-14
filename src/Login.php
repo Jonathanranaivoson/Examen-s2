@@ -34,6 +34,10 @@
                     <button type="submit" class="btn btn-primary">Se connecter</button>
                 </div>
             </form>
+
+            <p class="mt-3 text-center">
+                Pas de compte ? <a href="../src/inscription.php">Inscrivez-vous</a>
+            </p>
         </div>
     </div>
 </body>
