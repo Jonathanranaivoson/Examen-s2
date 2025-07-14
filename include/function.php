@@ -151,6 +151,14 @@ function getObjectImages($connect, $id_objet) {
 }
 
 
+function insertDatEmprunt($connect, $date_emprunt, $date_retour) {
+    $sql = "INSERT INTO Gemprunt (date_emprunt, date_retour) VALUES (?, ?)";
+    $stmt = mysqli_prepare($connect, $sql);
+    mysqli_stmt_bind_param($stmt, "sii", $date_emprunt, $date_retour);
+    return mysqli_stmt_execute($stmt) ? mysqli_insert_id($connect) : false;
+}
+
+
 
 ?>
 

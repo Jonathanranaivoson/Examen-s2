@@ -73,24 +73,7 @@ if (!$objet) {
                 
                 <div class="mt-4">
                     <h4>Images</h4>
-                    <?php
-                    $sql_images = "SELECT nom_image FROM Gimages_objet WHERE id_objet = ?";
-                    $stmt = mysqli_prepare($connect, $sql_images);
-                    mysqli_stmt_bind_param($stmt, "i", $id_objet);
-                    mysqli_stmt_execute($stmt);
-                    $images = mysqli_stmt_get_result($stmt);
-                    
-                    if (mysqli_num_rows($images) > 0): ?>
-                        <div class="d-flex flex-wrap gap-2">
-                            <?php while ($image = mysqli_fetch_assoc($images)): ?>
-                                <img src="../uploads/<?= htmlspecialchars($image['nom_image']) ?>" 
-                                     alt="Image de <?= htmlspecialchars($objet['nom_objet']) ?>" 
-                                     class="img-thumbnail" style="width: 200px; height: 200px; object-fit: cover;">
-                            <?php endwhile; ?>
-                        </div>
-                    <?php else: ?>
-                        <p class="text-muted">Aucune image disponible</p>
-                    <?php endif; ?>
+                   
                 </div>
             </div>
             <div class="card-footer">

@@ -21,13 +21,13 @@ require_once('../include/function.php');
         <div class="form-container">
             <form action="../traitements/trait_AjoutObjet.php" method="post">
                 <div class="mb-3">
-                    <label for="newObject" class="form-label">Date d'emprunt</label>
-                    <input type="date" class="form-control" name="newObject" required>
+                    <label for="date_emprunt" class="form-label">Date d'emprunt</label>
+                    <input type="date" class="form-control" name="date_emprunt" required>
                 </div>
 
                  <div class="mb-3">
-                    <label for="newObject" class="form-label">date de retour</label>
-                    <input type="date" class="form-control" name="newObject" required>
+                    <label for="date_retour" class="form-label">date de retour</label>
+                    <input type="date" class="form-control" name="date_retour" required>
                 </div>
 
                 <div class="d-grid">
@@ -38,7 +38,7 @@ require_once('../include/function.php');
             
         </div>
 
-        <a href="../src/liste_objet.php" class="btn btn-secondary">Retour à la liste</a>
+        <a href="../src/liste_objet.php" class="btn btn-secondary">Retour a la liste</a>
 
     </div>
 

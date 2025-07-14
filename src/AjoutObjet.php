@@ -35,7 +35,7 @@ require('../include/function.php');
             
         </div>
 
-        <a href="../src/liste_objet.php" class="btn btn-secondary">Retour à la liste</a>
+        <a href="../src/liste_objet.php" class="btn btn-secondary">Retour a la liste</a>
 
     </div>
 </body>
