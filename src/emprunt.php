@@ -1,8 +1,6 @@
 <?php
 require_once('../include/connexion.php');
 require_once('../include/function.php');
-
-
 ?>
 
 <!DOCTYPE html>
