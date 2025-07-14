@@ -1,0 +1,15 @@
+EXAMEN S2:
+--------------------------------
+1. Creation repertoire github [ok]
+2. Insertion de tous les trucs:
+ |-> * Assets (tous les truc de design)
+      |-> css
+          bootstrap
+          etc...
+     * include
+      |-> connexion.php
+      |-> function.php
+     * src
+      |-> tous les pages 
+     * traitements
+      |-> tous les traitements liee aux pages
