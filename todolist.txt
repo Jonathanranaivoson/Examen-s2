@@ -23,3 +23,9 @@ Version 1
  -categorie_objet
  -categorie_objetimages_objet
  -emprunt
+
+ Creation des pages 
+ -inscription.php et Login.php
+
+ Traitements
+ -gerer le login et inscription suivant les pages 

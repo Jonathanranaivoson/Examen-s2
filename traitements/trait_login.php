@@ -6,7 +6,7 @@
         $email = $_POST['email'];
         $mdp = $_POST['mdp'];
 
-        $sql = "SELECT email, mdp FROM membre WHERE email ='$email' AND mdp ='$mdp'";
+        $sql = "SELECT email, mdp FROM Gmembre WHERE email ='$email' AND mdp ='$mdp'";
         $resultat = mysqli_query($connect, $sql);
 
     if($donnee = mysqli_fetch_assoc($resultat)){
