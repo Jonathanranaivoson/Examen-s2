@@ -1,4 +1,4 @@
-EXAMEN S2: //KyenYJ6D
+EXAMEN S2: 
 --------------------------------
 1. Creation repertoire github [ok] [4392]
 

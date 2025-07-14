@@ -9,6 +9,18 @@ function getUserByEmail($connect, $email) {
     return mysqli_fetch_assoc(mysqli_stmt_get_result($stmt));
 }
 
+function getCategories() {
+    $connect = dbconnect();
+    $sql = "SELECT * FROM Gcategorie_objet";
+    $result = mysqli_query($connect, $sql);
+    $categories = [];
+    while ($row = mysqli_fetch_assoc($result)) {
+        $categories[] = $row;
+    }
+    mysqli_close($connect);
+    return $categories;
+}
 
 
 ?>
+

@@ -40,5 +40,10 @@ CREATE TABLE Gemprunt (
     FOREIGN KEY (id_membre) REFERENCES Gmembre(id_membre) 
 );
 
------------
+----------
+INSERT INTO Gmembre (nom, ddn, genre, email, ville, mdp) VALUES
+('Bema', '1995-03-22', 'M', 'Bema@email.com', 'Betafo', 'bb'),
+('Koto', '1988-09-10', 'F', 'Bema@email.com', 'antsirabe', 'kk');
 
+-----------
+INSERT INTO Gcategorie_objet (nom_categorie) VALUES ('esthetique'),('bricolage'),('mecanique'),('cuisine');
