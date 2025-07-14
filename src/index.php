@@ -17,7 +17,7 @@ require('../include/function.php');
             <div class="container">
                 <h1>Bienvenue</h1>
                 <div class="buttons">
-                    <a href="login.php" class="btn btn-outline-primary">Se connecter</a>
+                    <a href="Login.php" class="btn btn-outline-primary">Se connecter</a>
                     <a href="inscription.php" class="btn btn-outline-primary">S'inscrire</a>
                 </div>
             </div>

@@ -13,7 +13,7 @@
 
         if (mysqli_query($connect, $sql)) {
             $_SESSION['email'] = $donnee['email'];
-                header('Location: ../src/accueil.php');
+                header('Location: ../src/liste_objet.php');
                 exit;
         } else {
             echo "Email ou Mot de Passe incorrect , Veuillez Reesayer";

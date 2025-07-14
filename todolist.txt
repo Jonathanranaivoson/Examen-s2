@@ -29,3 +29,7 @@ Version 1
 
  Traitements
  -gerer le login et inscription suivant les pages 
+
+ Dans src/ : 
+   _ liste_objet.php = affichant tous la liste des objetes enprunter et rendu
+   _ filtre.php = filtre la liste par categories

@@ -24,7 +24,7 @@
                 $_SESSION['email'] = $email;
                 var_dump($_SESSION['email']);
                 
-                header('Location: ../src/accueil.php');
+                header('Location: ../src/liste_objet.php');
                 exit;
             } else {
                 echo "Erreur lors de l'inscription: " . mysqli_error($connect);

@@ -47,3 +47,33 @@ INSERT INTO Gmembre (nom, ddn, genre, email, ville, mdp) VALUES
 
 -----------
 INSERT INTO Gcategorie_objet (nom_categorie) VALUES ('esthetique'),('bricolage'),('mecanique'),('cuisine');
+-----------
+
+INSERT INTO Gemprunt (id_objet, id_membre, date_emprunt, date_retour) VALUES
+(1, 2, '2025-07-01', NULL),
+(5, 3, '2025-07-02', '2025-07-10'),
+(10, 4, '2025-07-03', NULL),
+(15, 1, '2025-07-04', '2025-07-12'),
+(20, 3, '2025-07-05', NULL),
+(25, 2, '2025-07-06', NULL),
+(30, 1, '2025-07-07', '2025-07-13'),
+(35, 2, '2025-07-08', NULL),
+(40, 3, '2025-07-09', NULL),
+(2, 4, '2025-07-10', NULL);
+---------------------------------------
+
+CREATE VIEW VueObjets AS
+SELECT 
+    o.id_objet,
+    o.nom_objet,
+    o.id_categorie,
+    c.nom_categorie,
+    o.id_membre,
+    m.nom AS nom_membre,
+    e.id_emprunt,
+    e.date_emprunt,
+    e.date_retour
+FROM Gobjet o
+LEFT JOIN Gcategorie_objet c ON o.id_categorie = c.id_categorie
+LEFT JOIN Gmembre m ON o.id_membre = m.id_membre
+LEFT JOIN Gemprunt e ON o.id_objet = e.id_objet;
